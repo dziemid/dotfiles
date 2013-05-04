@@ -7,6 +7,7 @@ export HISTSIZE=10000
 shopt -s histappend
 
 source ~/dotfiles/githelpers.sh
+complete -C ~/dotfiles/bash/rake_completion -o default rake
 
 alias be="bundle exec "
 alias bi="bundle install "
@@ -22,6 +23,7 @@ alias work="cd ~/work"
 alias rea="cd ~/work/rea"
 alias calculon="cd ~/work/rea/calculon"
 alias codefun="cd ~/code_fun"
+alias retag="ctags -R --exclude=.svn --exclude=.git --exclude=log --exclude=tmp *"
 
 if [[ ${EUID} == 0 ]] ; then
     PS1='\[\033[01m\][ \[\033[01;31m\]\u@\h \[\033[00m\]\[\033[01m\]] \[\033[01;32m\]\w\[\033[00m\]\n\[\033[01;31m\]$\[\033[00m\]> '
