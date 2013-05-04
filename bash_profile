@@ -1,5 +1,6 @@
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+export GREP_OPTIONS="--color"
 
 source ~/dotfiles/githelpers.sh
 
