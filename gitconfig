@@ -1,0 +1,14 @@
+[user]
+	name = Greg Dziemidowicz
+	email = greg@cogent.co
+[alias]
+	s = status
+	p = pull --rebase
+	l = 
+[color]
+	ui = true
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
