@@ -1,6 +1,10 @@
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export GREP_OPTIONS="--color"
+# Store 10k history entries
+export HISTSIZE=10000
+# Append to the history file when exiting instead of overwriting it
+shopt -s histappend
 
 source ~/dotfiles/githelpers.sh
 
