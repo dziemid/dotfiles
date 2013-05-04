@@ -24,6 +24,7 @@ alias rea="cd ~/work/rea"
 alias calculon="cd ~/work/rea/calculon"
 alias codefun="cd ~/code_fun"
 alias retag="ctags -R --exclude=.svn --exclude=.git --exclude=log --exclude=tmp *"
+alias irb="irb --readline -r irb/completion"
 
 if [[ ${EUID} == 0 ]] ; then
     PS1='\[\033[01m\][ \[\033[01;31m\]\u@\h \[\033[00m\]\[\033[01m\]] \[\033[01;32m\]\w\[\033[00m\]\n\[\033[01;31m\]$\[\033[00m\]> '
